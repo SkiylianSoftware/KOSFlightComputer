@@ -23,7 +23,13 @@ stage.
 when maxThrust = 0 then {
     print "staging".
     stage.
-    if (Vessel:stagenum > 0) {
+    if (stage:number > 0) {
         preserve.
     }
+}
+
+until false {
+    print "MET: " + round(missionTime)+"s" at(1, 20).
+    print "Altitude: " + round(altitude/1000,3) + "Km" at (1, 21).
+    wait 1.0.
 }
