@@ -1,3 +1,6 @@
+// wait for the vessel to load
+wait until ship:unpacked.
+
 // open the terminal
 core:part:getmodule("kosProcessor"):doevent("Open Terminal").
 
